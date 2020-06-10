@@ -33,6 +33,31 @@
 <p><br/>https://cyberbotics.com/doc/guide/sensors</p>
 <p>Webots can simulate a lot of standard robotic sensors.<br/>Webots可以模擬許多標準的機器人傳感器<br/>Accelerometer-Simulates an accelerometer sensor which measures the relative accelerations.<br/>加速計-模擬測量相對加速度的加速度傳感器。<br/>Camera-Simulates an RGB camera, a linear camera, a gray-scale camera, a fish-eye camera or a smart camera with multiple special effects including noise, depth of field, motion blur or lense flares.<br/>相機-模擬具有多種特殊效果（包括噪聲，景深，運動模糊或鏡頭光暈）的RGB相機，線性相機，灰度相機，魚眼鏡頭或智能相機<br/>Compass-Simulates a magnetic sensor which measures the relative direction to the north.<br/>羅盤-模擬一個磁傳感器，該傳感器測量向北的相對方向。<br/>DistanceSensor-Simulates a distance measuring sensor based on infra-red light, sonar echo, or laser beam.<br/>距離傳感器-基於紅外光，聲納迴聲或激光束模擬測距傳感器。<br/>GPS-Simulates a positioning sensor which measures the absolute position in Webots coordinate system or in the WGS84 coordinate system<br/>全球定位系統-模擬一個定位傳感器，該傳感器測量Webots坐標系或WGS84坐標系中的絕對位置。<br/>Gyro-Simulates a gyroscope sensor which measures the relative angular velocities.<br/>陀螺儀-模擬測量相對角速度的陀螺儀傳感器。<br/>InertialUnit-Simulates a sensor which measures the relative roll, pitch and yaw angles.<br/>慣性單位-模擬一個傳感器，該傳感器測量相對的側傾角，俯仰角和偏航角。<br/>Lidar-Simulates a laser-scanner sensor also known as lidar<br/>積光雷達-模擬也稱為激光雷達的激光掃描儀傳感器。<br/>PositionSensor-Simulates a sensor which can monitor a joint position, such as an encoder or a potentiometer<br/>位置傳感器-模擬可以監視關節位置的傳感器，例如編碼器或電位計。<br/>Radar-Simulates a radar sensor.<br/>雷達-模擬雷達傳感器。<br/>RangeFinder-Simulates a depth camera also known as range-finder.<br/>測距儀-模擬深度相機，也稱為測距儀。<br/>Receiver-Simulates radio, serial or infra-red receiver receiving data from other robots.<br/>接收器-模擬從其他機器人接收數據的無線電，串行或紅外接收器。<br/>TouchSensor-Simulates a bumper or a force sensor.<br/>觸控感應器-模擬保險槓或力傳感器。</p>
 <p></p>
-<h2>Objects對象</h2>
+<h2>對象Objects</h2>
 <p><br/>https://cyberbotics.com/doc/guide/objects</p>
 <p>1.Sections欄目<br/>2.Advertising Board廣告板<br/>3.Apartment Structure公寓結構<br/>4.Backgrounds背景資料<br/>5.Balls球<br/>6.Bathroom浴室<br/>7.Bedroom臥室<br/>8.Buildings建築物<br/>9.Cabinet內閣<br/>10.Chairs椅子<br/>11.Computers電腦<br/>12.Create Wall創建牆<br/>13.Drinks飲料<br/>14.Factory場<br/>15.Containers貨櫃<br/>16.Conveyors輸送機<br/>17.Fire Extinguisher滅火器<br/>18.Manhole沙井<br/>19.Pallet貨盤<br/>20.Pipes管子<br/>21.Tools工具類<br/>22.Valves閥門<br/>23.Floors樓層數<br/>24.Freight貨物<br/>25.Fruits水果<br/>26.Garden花園<br/>27.Geometries幾何形狀<br/>28.Kitchen廚房<br/>29.Breakfast早餐<br/>30.Components組件<br/>31.Fridge冰箱<br/>32.Oven烤箱<br/>33.Utensils餐具<br/>34.Lego樂高積木<br/>35.Lights燈火<br/>36.Living Room Furniture客廳家具<br/>37.Mirror鏡子<br/>38.Obstacles障礙物<br/>39.Paintings畫作<br/>40.Panels面板<br/>41.Plants植物<br/>42.Road路<br/>43.Robotstadium機器人體育場<br/>44.Rocks岩石<br/>45.School Furniture學校家具<br/>46.Shapes形狀<br/>47.Solids固體<br/>48.Stairs樓梯<br/>49.Street Furniture街道家具<br/>50.Tables桌子<br/>51.Telephone電話<br/>52.Television電視<br/>53.Toys玩具<br/>54.Traffic交通<br/>55.Trees樹木</p>
+<h1>VirtualBox</h1>
+<p><span>VirtualBox→Files→Preferences</span><span>→Network</span></p>
+<p><span>主機IP</span></p>
+<p><span>2001:288:6004:17 為機械設計系網段</span></p>
+<p><span>2020為年份</span></p>
+<p><span>1為cda 2為cdb 3為wcm 4為wcmj</span></p>
+<p><span>71為407231 表示甲班 72為乙班</span></p>
+<p><span>01為該班學號</span></p>
+<p><span>客體ip為虛擬主機的IPV6位址</span></p>
+<p><span><img alt="" height="376" src="/images/VirtualBox_wQ8U8lbqRA.png" width="454"/></span></p>
+<p><img alt="" height="426" src="/images/ApplicationFrameHost_i28nWWTvtM.png" width="449"/></p>
+<p>進入Virualbox後</p>
+<p>ifconfig為查詢ip</p>
+<p><span>sudo apt install net-tools為安裝net-tools</span></p>
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/netplan</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi 00-installer-config.yaml</code></div>
+<img alt="" height="253" src="/images/VirtualBox_jtnPA7RGE2.png" width="270"/>
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/apt/apt.conf.d</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi proxy.conf</code></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span>Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</span></code></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">port號為電腦本身proxy的號碼</span></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span><img alt="" height="300" src="/images/VirtualBox_3TSFI4aNeC.png" width="320"/></span></code></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span>udo apt update 更新</span></code></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span></span></code></div>
+<p></p>
