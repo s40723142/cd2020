@@ -154,10 +154,36 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Team member << <a href='Team member.html'>Previous</a> <a href='執行器(Actuators).html'>Next</a> >> 執行器(Actuators)<br /><h1>WEBOTS翻譯</h1>
-<p><br/>電子書: https://cyberbotics.com/doc/guide/index</p>
-<p></p>
-<br />Team member << <a href='Team member.html'>Previous</a> <a href='執行器(Actuators).html'>Next</a> >> 執行器(Actuators)</div>
+    <div id="tipue_search_content">對象Objects << <a href='對象Objects.html'>Previous</a> <br /><h1>VirtualBox</h1>
+<p><span>VirtualBox→Files→Preferences</span><span>→Network</span></p>
+<p><span>主機IP</span></p>
+<p><span>2001:288:6004:17 為機械設計系網段</span></p>
+<p><span>2020為年份</span></p>
+<p><span>1為cda 2為cdb 3為wcm 4為wcmj</span></p>
+<p><span>71為407231 表示甲班 72為乙班</span></p>
+<p><span>01為該班學號</span></p>
+<p><span>客體ip為虛擬主機的IPV6位址</span></p>
+<p><span><img alt="" height="376" src="./../images/VirtualBox_wQ8U8lbqRA.png" width="454"/></span></p>
+<p><img alt="" height="426" src="./../images/ApplicationFrameHost_i28nWWTvtM.png" width="449"/></p>
+<p>進入Virualbox後</p>
+<p>ifconfig為查詢ip</p>
+<p><span>sudo apt install net-tools為安裝net-tools</span></p>
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/netplan</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi 00-installer-config.yaml</code></div>
+<p><img alt="" height="253" src="./../images/VirtualBox_jtnPA7RGE2.png" width="270"/></p>
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/apt/apt.conf.d</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi proxy.conf</code></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span>Acquire::http::proxy "http://[2001:288:6004:17::填port號]:3128";</span></code></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">port號為電腦本身proxy的號碼</span></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span><img alt="" height="300" src="./../images/VirtualBox_3TSFI4aNeC.png" width="320"/></span></code></div>
+<div class="line number2 index1 alt1"><code class="html plain"><span>udo apt update 更新</span></code></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">vi wsgi.py</span></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">填入虛擬主機位址儲存後退出</span></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">cd /tmp/cd2020pj1/docs/cmsimde</span></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">python3 wsgi.py</span></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;">使用虛擬主機的瀏覽器即可進入</span></div>
+<div class="line number2 index1 alt1"><span face="monospace" style="font-family: monospace;"></span></div>
+<p></p><br />對象Objects << <a href='對象Objects.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
